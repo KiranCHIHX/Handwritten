@@ -1,0 +1,3 @@
+Parallelization:
+    Job_count: 1
+    backend: "threading" # threading | multiprocessing | loky

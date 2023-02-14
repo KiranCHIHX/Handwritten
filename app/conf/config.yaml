@@ -1,0 +1,65 @@
+APPLICATION: Handwritten or Printed Image Classifier
+APPLICATION_ACRONYM: MHWC
+VERSION: 1.0.0
+DESCRIPTION: An API to classify an Image as handwritten or printed
+COPYRIGHT: "Copyright(C), 2022 IHX Private Limited. All Rights Reserved. Unauthorized access to this system is forbidden and will be prosecuted by law. By accessing this system, you agree that your actions may be monitored if unauthorized usage is suspected."
+TERMS_OF_SERVICE: https://www.ihx.in/terms.html
+PRVACY_POLICY: https://www.ihx.in/privacy.html
+API_PATH: /MHWC/v1
+BACKEND_CORS_ORIGINS: []
+Logger:
+  File: True
+  Console: False
+  app:
+    Level: INFO #c capital - INFO|WARN|DEBUG|ERROR|CRITICAL
+    Format: "%(asctime)s-%(process)d-%(levelname)s-%(message)s"
+    Filename: "./logs/MHWC_app.log"
+    MaxBytes: 0
+    BackupCount: 0
+  main:
+    Level: INFO #c capital - INFO|WARN|DEBUG|ERROR|CRITICAL
+    Format: "%(asctime)s-%(process)d-%(levelname)s-%(message)s"
+    Filename: "./logs/MHWC_main.log"
+    MaxBytes: 0
+    BackupCount: 0
+  run:
+    Level: INFO #c capital - INFO|WARN|DEBUG|ERROR|CRITICAL
+    Format: "%(asctime)s-%(process)d-%(levelname)s-%(message)s"
+    Filename: "./logs/MHWC_run.log"
+    MaxBytes: 0
+    BackupCount: 0
+Filters:
+  # In a 2 stage process classify + extract only the filtered element goes for extraction
+  classifier: ["NAME-OF-LABEL"]
+# Add any global configuration values here
+#
+# Environment specific values go in the env directory
+defaults:
+  - _self_
+  - store: development
+  - processing: development
+  - models: development
+
+demo:
+  - _self_
+  - store: demo
+  - processing: demo
+  - models: demo
+
+development:
+  - _self_
+  - store: development
+  - processing: development
+  - models: development
+
+production:
+  - _self_
+  - store: production
+  - processing: production
+  - models: production
+
+staging:
+  - _self_
+  - store: staging
+  - processing: staging
+  - models: staging

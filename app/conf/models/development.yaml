@@ -1,0 +1,14 @@
+Classifier:
+  Enabled: True
+  Model: "HandwrittenClassifier"
+  model_path: "app/models/hw_model.pt"
+
+OCR:
+  Azure_Layout:
+    endpoint: "http://"
+    AZURE_KEY: ""
+  Azure_Invoice:
+    endpoint: "http://"
+    AZURE_KEY: ""
+    pole_tries: 10
+    pole_wait_secs: 10

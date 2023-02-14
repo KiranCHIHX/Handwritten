@@ -1,0 +1,16 @@
+MODE: development
+mongodb:
+  MongoClient: "mongodb+srv://<username>:<password>@cluster0.38bqa.mongodb.net/?ssl=true&ssl_cert_reqs=CERT_NONE"
+  db: "IHXDev"
+postgresql:
+  db_url: "http://0.0.0.0/5432"
+  db_username: ""
+  db_password: ""
+S3:
+  Object_Store:
+    url: "s3://ihx-dev/folder"
+    bucketname: ""
+    id: ""
+    key: ""
+paths:
+  data: "app/controllers/references/files"

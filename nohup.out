@@ -1,0 +1,310 @@
+/home/shreyask/workdir/gitclones/MHWC_Model/./app/core/config.py:22: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  with initialize(config_path= "../conf"):
+INFO:     Started server process [308987]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8353 (Press CTRL+C to quit)
+Environment Variables [development]: MHWC/AKIAYYSCAMR6MYPLQSE3/5GOkZ01DTC0Ag9gdF9Iewpx17pG++ZAC4VGNf8BP
+=======Directory: conf
+Local directory /home/shreyask/workdir/gitclones/MHWC_Model/app/conf
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/MHWC_Model/app/conf/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new conf update.
+=======Directory: models
+Local directory /home/shreyask/workdir/gitclones/MHWC_Model/app/models
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/MHWC_Model/app/models/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new models update.
+=======Directory: files
+Local directory /home/shreyask/workdir/gitclones/MHWC_Model/app/controllers/dbo/files
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/MHWC_Model/app/controllers/dbo/files/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new files update.
+^^^^^^^ Download Config + Model ^^^^^^^^^^^^
+Logger Initialised ...
+Loaded pretrained weights for efficientnet-b2
+INFO:     66.249.93.128:47750 - "GET /docs HTTP/1.1" 307 Temporary Redirect
+INFO:     66.249.93.142:45479 - "GET /docs/ HTTP/1.1" 200 OK
+INFO:     182.74.197.50:62384 - "GET /docs/ HTTP/1.1" 200 OK
+INFO:     182.74.197.50:62384 - "GET /MHWC/v1/openapi.json HTTP/1.1" 200 OK
+INFO:     182.74.197.50:52420 - "GET /docs HTTP/1.1" 307 Temporary Redirect
+INFO:     182.74.197.50:52420 - "GET /docs/ HTTP/1.1" 200 OK
+INFO:     182.74.197.50:52420 - "GET /MHWC/v1/openapi.json HTTP/1.1" 200 OK
+retreiving predictions...
+retrieved predictions! {'prob': 0.6132967, 'is_hw': True}
+INFO:     182.74.197.50:52421 - "POST /MHWC/v1/document/classify HTTP/1.1" 200 OK
+retreiving predictions...
+retrieved predictions! {'prob': 0.723881, 'is_hw': True}
+INFO:     182.74.197.50:52433 - "POST /MHWC/v1/document/classify HTTP/1.1" 200 OK
+/home/shreyask/workdir/gitclones/MHWC_Model/./app/core/config.py:22: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  with initialize(config_path= "../conf"):
+INFO:     Started server process [321108]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8353 (Press CTRL+C to quit)
+Environment Variables [development]: MHWC/AKIAYYSCAMR6MYPLQSE3/5GOkZ01DTC0Ag9gdF9Iewpx17pG++ZAC4VGNf8BP
+=======Directory: conf
+Local directory /home/shreyask/workdir/gitclones/MHWC_Model/app/conf
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/MHWC_Model/app/conf/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new conf update.
+=======Directory: models
+Local directory /home/shreyask/workdir/gitclones/MHWC_Model/app/models
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/MHWC_Model/app/models/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new models update.
+=======Directory: files
+Local directory /home/shreyask/workdir/gitclones/MHWC_Model/app/controllers/dbo/files
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/MHWC_Model/app/controllers/dbo/files/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new files update.
+^^^^^^^ Download Config + Model ^^^^^^^^^^^^
+Logger Initialised ...
+Loaded pretrained weights for efficientnet-b2
+INFO:     182.74.197.50:62412 - "GET /docs HTTP/1.1" 307 Temporary Redirect
+INFO:     182.74.197.50:62412 - "GET /docs/ HTTP/1.1" 200 OK
+INFO:     182.74.197.50:62412 - "GET /MHWC/v1/openapi.json HTTP/1.1" 200 OK
+retreiving predictions...
+retrieved predictions! {'prob': 0.983371, 'is_hw': True}
+INFO:     182.74.197.50:62411 - "POST /MHWC/v1/document/classify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/encoders.py", line 152, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.float32' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/encoders.py", line 157, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/routing.py", line 255, in app
+    content = await serialize_response(
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/routing.py", line 152, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/encoders.py", line 160, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [TypeError("'numpy.float32' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+INFO:     182.74.197.50:62421 - "GET /docs/ HTTP/1.1" 200 OK
+INFO:     182.74.197.50:62421 - "GET /MHWC/v1/openapi.json HTTP/1.1" 200 OK
+retreiving predictions...
+retrieved predictions! {'prob': 0.983371, 'is_hw': True}
+INFO:     182.74.197.50:62422 - "POST /MHWC/v1/document/classify HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/encoders.py", line 152, in jsonable_encoder
+    data = dict(obj)
+TypeError: 'numpy.float32' object is not iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/encoders.py", line 157, in jsonable_encoder
+    data = vars(obj)
+TypeError: vars() argument must have __dict__ attribute
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/uvicorn/protocols/http/httptools_impl.py", line 419, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/uvicorn/middleware/proxy_headers.py", line 78, in __call__
+    return await self.app(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/applications.py", line 270, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/applications.py", line 124, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 21, in __call__
+    raise e
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/routing.py", line 706, in __call__
+    await route.handle(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/routing.py", line 255, in app
+    content = await serialize_response(
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/routing.py", line 152, in serialize_response
+    return jsonable_encoder(response_content)
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/encoders.py", line 117, in jsonable_encoder
+    encoded_value = jsonable_encoder(
+  File "/home/shreyask/.conda/envs/MHWC/lib/python3.8/site-packages/fastapi/encoders.py", line 160, in jsonable_encoder
+    raise ValueError(errors) from e
+ValueError: [TypeError("'numpy.float32' object is not iterable"), TypeError('vars() argument must have __dict__ attribute')]
+/home/shreyask/workdir/gitclones/MHWC_Model/./app/core/config.py:22: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  with initialize(config_path= "../conf"):
+INFO:     Started server process [337791]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8353 (Press CTRL+C to quit)
+/home/shreyask/workdir/gitclones/handwritten-classifier/./app/core/config.py:22: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  with initialize(config_path= "../conf"):
+INFO:     Started server process [350890]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8353 (Press CTRL+C to quit)
+Environment Variables [development]: MHWC/AKIAYYSCAMR6MYPLQSE3/5GOkZ01DTC0Ag9gdF9Iewpx17pG++ZAC4VGNf8BP
+=======Directory: conf
+Local directory /home/shreyask/workdir/gitclones/handwritten-classifier/app/conf
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/handwritten-classifier/app/conf/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new conf update.
+=======Directory: models
+Local directory /home/shreyask/workdir/gitclones/handwritten-classifier/app/models
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/handwritten-classifier/app/models/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new models update.
+=======Directory: files
+Local directory /home/shreyask/workdir/gitclones/handwritten-classifier/app/controllers/dbo/files
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/handwritten-classifier/app/controllers/dbo/files/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new files update.
+^^^^^^^ Download Config + Model ^^^^^^^^^^^^
+Logger Initialised ...
+Loaded pretrained weights for efficientnet-b2
+INFO:     49.205.142.205:63933 - "GET /docs HTTP/1.1" 307 Temporary Redirect
+INFO:     49.205.142.205:63933 - "GET /docs/ HTTP/1.1" 200 OK
+INFO:     49.205.142.205:63933 - "GET /MHWC/v1/openapi.json HTTP/1.1" 200 OK
+retreiving predictions...
+retrieved predictions! {'prob': 0.99961334, 'is_hw': False}
+INFO:     49.205.142.205:63564 - "POST /MHWC/v1/document/classify HTTP/1.1" 200 OK
+INFO:     14.141.46.50:56275 - "GET /docs HTTP/1.1" 307 Temporary Redirect
+INFO:     14.141.46.50:56275 - "GET /docs/ HTTP/1.1" 200 OK
+INFO:     14.141.46.50:56275 - "GET /MHWC/v1/openapi.json HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [350890]
+/home/shreyask/workdir/gitclones/handwritten-classifier/./app/core/config.py:22: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  with initialize(config_path= "../conf"):
+INFO:     Started server process [4133202]
+/home/shreyask/workdir/gitclones/handwritten-classifier/./app/core/config.py:22: UserWarning: 
+The version_base parameter is not specified.
+Please specify a compatability version level, or None.
+Will assume defaults for version 1.1
+  with initialize(config_path= "../conf"):
+INFO:     Started server process [4132710]
+INFO:     Waiting for application startup.
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 8354): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+Environment Variables [development]: MHWC/AKIAYYSCAMR6MYPLQSE3/5GOkZ01DTC0Ag9gdF9Iewpx17pG++ZAC4VGNf8BP
+=======Directory: conf
+Local directory /home/shreyask/workdir/gitclones/handwritten-classifier/app/conf
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/handwritten-classifier/app/conf/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new conf update.
+=======Directory: models
+Local directory /home/shreyask/workdir/gitclones/handwritten-classifier/app/models
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/handwritten-classifier/app/models/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new models update.
+=======Directory: files
+Local directory /home/shreyask/workdir/gitclones/handwritten-classifier/app/controllers/dbo/files
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/handwritten-classifier/app/controllers/dbo/files/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new files update.
+^^^^^^^ Download Config + Model ^^^^^^^^^^^^
+Logger Initialised ...
+Loaded pretrained weights for efficientnet-b2
+INFO:     Uvicorn running on http://0.0.0.0:8353 (Press CTRL+C to quit)
+Environment Variables [development]: MHWC/AKIAYYSCAMR6MYPLQSE3/5GOkZ01DTC0Ag9gdF9Iewpx17pG++ZAC4VGNf8BP
+=======Directory: conf
+Local directory /home/shreyask/workdir/gitclones/handwritten-classifier/app/conf
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/handwritten-classifier/app/conf/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new conf update.
+=======Directory: models
+Local directory /home/shreyask/workdir/gitclones/handwritten-classifier/app/models
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/handwritten-classifier/app/models/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new models update.
+=======Directory: files
+Local directory /home/shreyask/workdir/gitclones/handwritten-classifier/app/controllers/dbo/files
+Local directry present: True
+---->Local version file [1]: ['/home/shreyask/workdir/gitclones/handwritten-classifier/app/controllers/dbo/files/1_0_0.ver']
+---->Local version: 1_0_0.ver
+----->No new files update.
+^^^^^^^ Download Config + Model ^^^^^^^^^^^^
+Logger Initialised ...
+Loaded pretrained weights for efficientnet-b2
+INFO:     14.141.46.50:56310 - "GET /docs HTTP/1.1" 307 Temporary Redirect
+INFO:     14.141.46.50:56310 - "GET /docs/ HTTP/1.1" 200 OK
+INFO:     14.141.46.50:56310 - "GET /MHWC/v1/openapi.json HTTP/1.1" 200 OK
+INFO:     14.141.46.50:56309 - "GET /docs/ HTTP/1.1" 200 OK
+INFO:     14.141.46.50:56309 - "GET /MHWC/v1/openapi.json HTTP/1.1" 200 OK

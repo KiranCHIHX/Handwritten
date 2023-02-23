@@ -16,7 +16,7 @@ COPY . .
 
 RUN /usr/local/bin/python -m pip install --upgrade pip
 
-RUN apt update
+RUN apt update && chmod +x ./scripts/start.sh
 
 ARG PORT=80
 ARG HOST=0.0.0.0

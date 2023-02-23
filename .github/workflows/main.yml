@@ -36,4 +36,22 @@ jobs:
         IMAGE_TAG: handwritten-testing-image
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        docker run -p 8999:80 handwritten-testing-image
+
+        #docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+           
+       
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Newman
+      run: |
+        npm install -g newman
+        adress=$(hostname -i)
+
+    - name: Run API tests
+      env:
+        BASE_URL: https://adress:8999
+        API_KEY: ${{ secrets.API_KEY }}
+      run: newman run /C:/Users/DELLsun/Downloads/Medcat Entity Extractor.postman_collection.json --global-var "api_key=$API_KEY" --global-var "base_url=$BASE_URL"
+

@@ -59,5 +59,4 @@ jobs:
       env:
         BASE_URL: https://adress:8999
         API_KEY: ${{ secrets.API_KEY }}
-      run: newman run /C:/Users/DELLsun/Downloads/Medcat Entity Extractor.postman_collection.json --global-var "api_key=$API_KEY" --global-var "base_url=$BASE_URL"
-
+      run: newman run collection.json --global-var "api_key=$API_KEY" --global-var "base_url=$BASE_URL"

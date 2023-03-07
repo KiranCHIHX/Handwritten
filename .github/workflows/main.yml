@@ -33,10 +33,10 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: repoforsampletest
-        IMAGE_TAG: repoforsampletest1
+        IMAGE_TAG: repoforsampletest
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker run -p 8794:80 repoforsampletest1
+        docker run -p 8794:80 repoforsampletest
         OUTPUT=$(hostname -i)
         echo "${OUTPUT}"
         curl -v http://echo "${OUTPUT}":80/

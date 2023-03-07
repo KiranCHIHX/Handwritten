@@ -3,7 +3,7 @@ name: Deploy to ECR
 on:
  
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   
@@ -41,4 +41,4 @@ jobs:
         echo "${OUTPUT}"
         curl -v http://echo "${OUTPUT}":80/
         curl -v echo "${OUTPUT}":80/
-      ##docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+      ###docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG

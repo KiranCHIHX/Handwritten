@@ -36,7 +36,7 @@ jobs:
         IMAGE_TAG: repoforsampletest
       run: |
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
-        docker run -p 8794:80 repoforsampletest
+        docker run -p 8794:80 $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         OUTPUT=$(hostname -i)
         echo "${OUTPUT}"
         curl -v http://echo "${OUTPUT}":80/
